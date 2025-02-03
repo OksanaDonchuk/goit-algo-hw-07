@@ -5,6 +5,7 @@ class Node:
         self.right: "Node | None" = None
         self.key: int = key
 
+
 def get_max_value(node: Node | None) -> int | None:
     """
     Знаходить найбільше значення в двійковому дереві пошуку.
@@ -23,6 +24,7 @@ def get_max_value(node: Node | None) -> int | None:
     while current.right is not None:
         current = current.right
     return current.key
+
 
 # Приклад використання:
 root = Node(10)

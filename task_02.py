@@ -10,6 +10,7 @@ class Node:
         self.right: "Node | None" = None
         self.key: int = key
 
+
 def get_min_value(node: Node | None) -> int | None:
     """
     Знаходить найменше значення у двійковому дереві пошуку.
@@ -28,6 +29,7 @@ def get_min_value(node: Node | None) -> int | None:
     while current.left is not None:
         current = current.left
     return current.key
+
 
 # Приклад використання:
 root = Node(10)

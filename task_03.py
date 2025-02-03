@@ -10,6 +10,7 @@ class Node:
         self.left: "Node | None" = None
         self.right: "Node | None" = None
 
+
 def get_sum_value(node: Node | None) -> int:
     """
     Рекурсивно обчислює суму всіх значень у двійковому дереві пошуку.
@@ -22,9 +23,10 @@ def get_sum_value(node: Node | None) -> int:
     """
     if node is None:
         return 0
-    
+
     # Рекурсивний підхід: сума значення поточного вузла + сума лівого та правого піддерева
     return node.value + get_sum_value(node.left) + get_sum_value(node.right)
+
 
 # Приклад використання:
 root = Node(10)
