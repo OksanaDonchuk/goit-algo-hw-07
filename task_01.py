@@ -24,7 +24,7 @@ def get_max_value(node: Node | None) -> int | None:
         current = current.right
     return current.key
 
-# Створення правильного BST:
+# Приклад використання:
 root = Node(10)
 root.left = Node(8)
 root.left.left = Node(5)

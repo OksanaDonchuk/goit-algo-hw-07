@@ -29,7 +29,7 @@ def get_min_value(node: Node | None) -> int | None:
         current = current.left
     return current.key
 
-# Створення коректного BST:
+# Приклад використання:
 root = Node(10)
 root.left = Node(8)
 root.left.left = Node(5)
